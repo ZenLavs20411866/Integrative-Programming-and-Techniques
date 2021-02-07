@@ -1,0 +1,1 @@
+This is the directory for the Iterations and Array Methods Assignment
