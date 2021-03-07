@@ -52,54 +52,65 @@ const myData = [
 		"email": "yesican@alumni.us"
 	}
 
+
+
 ]
+
+let objectMethods = {
+
+	printObjects: function() {
+		console.log("Print whole array")
+		console.log(myData);
+		}
+
+}
 
 console.log("Print whole array")
 console.log(myData);
 
-console.log("Print using for loop")
-let x = 0;
-for (x=0; x < myData.length; x++)
-{
-	console.log(myData[x]);
-}
+// console.log("Print using for loop")
+// let x = 0;
+// for (x=0; x < myData.length; x++)
+// {
+// 	console.log(myData[x]);
+// }
 
-console.log("Print using for in loop")
-for (x in myData)
-{
-	console.log(myData[x]);
-}
+// console.log("Print using for in loop")
+// for (x in myData)
+// {
+// 	console.log(myData[x]);
+// }
 
-console.log("Print using for of loop")
-for (x in myData)
-{
-	console.log(myData[x]);
-}
+// console.log("Print using for of loop")
+// for (x in myData)
+// {
+// 	console.log(myData[x]);
+// }
 
-console.log("Print using while loop")
-x=0;
-while ( x < myData.length)
-{
-	console.log(myData[x]);
-	x++;
-}
+// console.log("Print using while loop")
+// x=0;
+// while ( x < myData.length)
+// {
+// 	console.log(myData[x]);
+// 	x++;
+// }
 
-console.log("Print using forEach loop");
+// console.log("Print using forEach loop");
 
-myData.forEach (function(value, index)
-{
-	console.log(myData[index]);
-})
+// myData.forEach (function(value, index)
+// {
+// 	console.log(myData[index]);
+// })
 
-console.log("Print portion of data using filter (People above 60)");
-let peopleAbove60filter = myData.filter( function(data) {return data.age > 60} );
-console.log(peopleAbove60filter);
+// console.log("Print portion of data using filter (People above 60)");
+// let peopleAbove60filter = myData.filter( function(data) {return data.age > 60} );
+// console.log(peopleAbove60filter);
 
-console.log("Print portion of data using map (Name and age)");
-let peopleAbove60map = myData.map( function(data) { return `${data.name}: ${data.gender}` } );
-console.log(peopleAbove60map);
+// console.log("Print portion of data using map (Name and age)");
+// let peopleAbove60map = myData.map( function(data) { return `${data.name}: ${data.gender}` } );
+// console.log(peopleAbove60map);
 
-console.log("Print portion of data using reduce (Average of ages)");
-let ageSum = myData.reduce( function(incrementor, data) { return incrementor + data.age}, 0);
-let ageAverage = ageSum/myData.length;
-console.log(ageAverage);
+// console.log("Print portion of data using reduce (Average of ages)");
+// let ageSum = myData.reduce( function(incrementor, data) { return incrementor + data.age}, 0);
+// let ageAverage = ageSum/myData.length;
+// console.log(ageAverage);
